@@ -6,6 +6,7 @@
     justify-content: center;
     height: 100vh; /* Use the full height of the viewport */
     text-align: center; /* Center the text horizontally */
+    background-color:gray;
 }
   
 .links {
