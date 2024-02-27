@@ -5,7 +5,7 @@ import styles from './CommonStyles.module.css'; // Import the shared styles
 function LandingPage() {
   return (
     <div className={styles.container}> {/* Use the shared styles */}
-      <h1>Welcome to Our Astrolabs App1</h1>
+      <h1>Welcome to my new page </h1>
       <div className="links">
         <Link to="/login">Login</Link> | <Link to="/register">Register</Link>
       </div>
