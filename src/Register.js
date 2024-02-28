@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; 
-import styles from './CommonStyles.module.css';
+// import styles from './CommonStyles.module.css';
 import './RegisterPage.css';
 
 function Register() {
