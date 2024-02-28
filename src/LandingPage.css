@@ -1,25 +1,88 @@
 /* LandingPage.css */
 
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1; 
+  background-color: #c6eff794; 
+  padding: 25px 0; 
+  width: 100%; 
+}
+
+.navbar h1 {
+  margin: 0; 
+  font-size: 1.5em;
+  color: #9ef3f3; 
+}
+
+/* Logo Styles */
+.logo-container {
+  position: fixed;
+  top: 10px; 
+  left: 20px; 
+  z-index: 2;
+}
+
+.logo {
+  width: 100px; 
+  height: auto;
+ 
+
+}
+
+
+.typed-message {
+  font-size: 2em;
+  color: #ffffff; 
+  margin-top: 50px; 
+  animation: typing 3s steps(40, end); 
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Button Styles */
 .button {
-    background-color: #5b8abd; /* Modern blue color for the buttons */
-    color: rgb(255, 255, 255);
-    padding: 15px 30px; /* Adjust padding to make the buttons bigger */
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 1.2em; /* Increase font size for the buttons */
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
-    
-  }
-  
-  .button:hover {
-    background-color: #72a2d6; /* Darker blue color on hover */
-  }
-  
-  .buttons {
-    margin-top: 30px; /* Add margin to separate buttons from the title */
-    display: flex;
-    justify-content: center; /* Center align buttons */
-  }
-  
+  background-color: #7627cb; 
+  color: rgb(255, 255, 255);
+  padding: 15px 30px; 
+  border: none;
+  margin: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.2em; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #28ce39; 
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center; 
+ 
+}
+
+.typed-message {
+  font-size: 5em; 
+  font-family: 'Arial', sans-serif; 
+  font-weight: bold; 
+  margin-top: 20px; 
+}
