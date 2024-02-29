@@ -23,17 +23,18 @@ function Dashboard() {
 
     fetchUserData();
   }, []);
-
   return (
-    <div>
-      <h2>Dashboard</h2>
-      <p>Account Balance: ${balance}</p>
-      <h3>Transaction History</h3>
-      <ul>
-        {transactions.map((transaction) => (
-          <li key={transaction.id}>{transaction.amount} - {transaction.type}</li>
-        ))}
-      </ul>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', backgroundColor: '#f4f4f4' }}>
+      <div style={{ backgroundColor: '#fff', padding: '20px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
+        <h2 style={{ color: '#333', fontSize: '24px', marginBottom: '10px' }}>Dashboard :)</h2>
+        <p style={{ fontSize: '18px', marginBottom: '10px' }}>Account Balance: ${balance}</p>
+        <h3 style={{ color: '#333', fontSize: '20px', marginBottom: '10px' }}>Transaction History</h3>
+        <ul style={{ listStyleType: 'none', padding: 0 }}>
+          {transactions.map((transaction) => (
+            <li key={transaction.id} style={{ fontSize: '16px', marginBottom: '5px' }}>{transaction.amount} - {transaction.type}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

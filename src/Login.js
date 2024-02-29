@@ -22,14 +22,16 @@ function Login() {
   };
 
   return (
-    <div className={styles.container}>
-      <h2>Login</h2>
-      {message && <p>{message}</p>}
-      <form onSubmit={handleSubmit}>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
-        <button type="submit">Login</button>
+    <div className={styles.container}>{}
+    <div style={{ textAlign: 'center', marginTop: '50px' }}> {/* Apply inline styles */}
+      <h2 style={{ color: '#333', fontSize: '24px', marginBottom: '20px' }}>Login</h2> {/* Apply inline styles */}
+      {message && <p style={{ color: message.includes('failed') ? 'red' : 'green', marginBottom: '20px' }}>{message}</p>} {/* Apply inline styles */}
+      <form style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} onSubmit={handleSubmit}> {/* Apply inline styles */}
+        <input style={{ width: '300px', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '5px' }} type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required /> {/* Apply inline styles */}
+        <input style={{ width: '300px', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '5px' }} type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required /> {/* Apply inline styles */}
+        <button style={{ width: '150px', padding: '10px', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }} type="submit">Login</button> {/* Apply inline styles */}
       </form>
+    </div>
     </div>
   );
 }
