@@ -31,6 +31,7 @@ function Register() {
         <input style={{ width: '300px', padding: '10px', marginBottom: '10px', border: '1px solid #ccc', borderRadius: '5px' }} type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required /> {/* Apply inline styles */}
         <button style={{ width: '150px', padding: '10px', backgroundColor: '#007bff', color: '#fff', border: 'none', borderRadius: '5px', cursor: 'pointer' }} type="submit">Register</button> {/* Apply inline styles */}
       </form>
+      <img src="https://astrolabs.com/wp-content/uploads/2022/11/AL_LogoHorizontal.png" alt="Illustration" style={{ marginTop: '40px', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }} />
     </div>
     </div>
   );
