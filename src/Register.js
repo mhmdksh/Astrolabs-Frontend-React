@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+import { Link } from 'react-router-dom'; // Import Link component
 import styles from './CommonStyles.module.css';
 
 function Register() {
@@ -23,7 +24,8 @@ function Register() {
 
   return (
     <div className={styles.container}>
-      <h2>Register</h2>
+      <div className={styles.formContainer}>
+      <h1>Register</h1>
       {message && <p>{message}</p>}
       <form onSubmit={handleSubmit}>
         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
@@ -31,6 +33,11 @@ function Register() {
         <button type="submit">Register</button>
       </form>
     </div>
+    <div className={styles.backToHome}>
+    <Link to="/">Back to Home</Link> {/* Link to the home page */}
+  </div>
+</div>
+   
   );
 }
 

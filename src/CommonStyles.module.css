@@ -1,14 +1,111 @@
 /* CommonStyles.module.css */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Use the full height of the viewport */
-    text-align: center; /* Center the text horizontally */
-    background-color:gray;
-}
+
   
 .links {
     margin-top: 20px;
 }  
+
+/* CommonStyles.module.css */
+.container {
+    display: flex;
+    /*color: white;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://www.raed.net/img?id=670879); /* Replace 'your-background-image.jpg' with the path to your background image */
+    /*https://www.raed.net/img?id=670643*/
+    /*https://www.raed.net/img?id=670665*/
+    /*https://www.raed.net/img?id=670658*/
+    /*https://www.raed.net/img?id=670669*/
+    /*B1 https://www.raed.net/img?id=670849*/
+    /*B4 https://www.raed.net/img?id=670865*/
+    /*B5 https://www.raed.net/img?id=670879*/
+    /*B6 https://www.raed.net/img?id=670887*/
+    /*PB https://www.raed.net/img?id=670940*/
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  
+  .formContainer {
+    background-image: url(https://www.raed.net/img?id=670982);
+    /*https://www.raed.net/img?id=670940*/
+    /* https://www.raed.net/img?id=670982*/
+    /*background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 35px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle effect */
+    text-align: center;
+    max-width: 402spx;
+    position: absolute;
+    right: 514px;
+    left: 485px
+  
+    
+
+
+  }
+  
+  .backToHome {
+    position: absolute;
+    top: 50px;
+    /*left: 20px;*/
+    right: 60px;
+  }
+
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    color: black; /* Dark gray title color */
+    /* animation: flash 1s infinite; /* Flash animation */
+  }
+
+  /* Flash animation */
+@keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Styles for the form inputs and button */
+  input[type='email'],
+  input[type='password'],
+  button {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    align-items: center;
+  }
+  
+  button {
+    background-color:cornflowerblue; /* Blue color for the button */
+    color: black;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color:darkviolet; /* Darker blue color on hover */
+  }
+  
+  /* Styles for headings and messages */
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin-top: 10px;
+    color: #dc3545; /* Red color for error messages */
+  }
+  
